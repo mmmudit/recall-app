@@ -24,3 +24,175 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+/* ===== Layout ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #00b55b;
+}
+
+.btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #00b55b;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #009c4d;
+}
+
+.btn-outline {
+  border: 1px solid #00b55b;
+  color: #00b55b;
+  background: none;
+}
+
+.btn-outline:hover {
+  background: #00b55b;
+  color: white;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #00b55b;
+}
+
+.hero p {
+  margin: 1rem 0 2rem;
+  color: #555;
+  max-width: 500px;
+}
+
+/* ===== Features ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  padding: 2rem;
+  border: 1px solid #eaeaea;
+  border-radius: 1rem;
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: #00b55b;
+}
+
+/* ===== Pricing ===== */
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pricing-plan {
+  flex: 1;
+  max-width: 350px;
+  padding: 2rem;
+  border: 1px solid #eaeaea;
+  border-radius: 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.pricing-plan.highlight {
+  border: 2px solid #00b55b;
+  background: #f6fff9;
+}
+
+/* ===== FAQ ===== */
+.faq-item {
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 0.7rem;
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+
+.footer a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: white;
+}
